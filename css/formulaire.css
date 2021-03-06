@@ -1,0 +1,205 @@
+/*************FORMULAIRE**************************************/
+.grille {
+    /*  TABLEAU DES RESULTATS */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid black;
+
+
+}
+
+
+
+.grille div {
+    /*  TABLEAU DES RESULTATS */
+    padding: 5px;
+    border-bottom: 2px solid #ffffff;
+
+
+}
+
+
+
+
+form {
+    /* background-color: rgba(76, 103, 103, 0.38);*/
+    width: 50vw; /*AVANT 40*/
+    height: 50vh; /*AVANT 40*/
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: 5px solid rgba(81, 19, 219, 0.45);
+
+    box-sizing: border-box;
+    box-shadow: 4px 4px 20px #000;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+
+}
+
+
+
+
+input {
+    /* border-radius: 15px;*/
+
+    border: 2px solid rgba(0, 245, 255, 0.56);
+    padding: 0px;
+
+}
+
+/*************SUIVANT BOUTON**************************************/
+.suivant {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    /* border-top-left-radius:15%;
+    border-bottom-right-radius: 15%;*/
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    /* background-color: rgba(0, 245, 255, 0.28);*/
+
+    /* border: 2px solid red;*/
+
+    background-image: linear-gradient(-45deg, rgba(0, 245, 255, 0.56), rgba(81, 19, 219, 0.45), rgba(0, 245, 255, 0.56));
+    border-radius: 30px 0 30px 0;
+    border: none;
+    margin-top: 20px;
+
+    transition: all ease-in-out 1s;
+    background-size: 400% 400%;
+    background-position: 0 0;
+
+}
+
+
+.suivant:hover {
+    border-radius: 0 50px 0 50px;
+    background-position: 100% 50%;
+    box-shadow: 4px 4px 20px blue;
+    color: white;
+}
+
+/*.suivant:hover{
+   
+    background-color:#0a3a95;
+    position: relative;
+    box-shadow: 4px 4px 20px #000;
+    color: white;
+}
+
+*/
+
+/*.suivant::after{
+    
+    content: '';
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    
+    transition: top 1s ease-in-out,right 2s ease-in-out;
+    background-color: rgba(167, 0, 255, 0.97);
+}
+
+
+.suivant:hover::after{
+    top:50%;
+    bottom:50%;
+}
+*/
+
+/*********MESSAGE D'ERREUR********************************/
+
+
+@keyframes animErreur {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+.message {
+    position: relative;
+    display: block;
+
+    animation: animErreur 2s;
+
+
+}
+
+.message::after {
+
+    color: #b70d0d;
+    /*content: '\2613';*/
+    /* content:'\26D4';*/
+    content: '\2666';
+    font-size: 1.5em;
+    margin-left: 10px;
+
+}
+
+/*********LABEL TEXTE********************************/
+
+
+label h6 {
+    transform: translate(1em, 4em);
+    
+
+
+}
+
+label h6.remonte {
+    transform: translate(0em, 0em);
+
+
+}
+
+label input {
+    background-color: rgba(0, 245, 255, 0.16);
+    color: black;
+    border: none;
+    outline: 0px;
+    border-bottom: 3px solid #fff;
+}
+
+label input.ligne {
+    border-bottom: 2px solid #000000;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    background: none;
+    animation: ligneBouge 1s both;
+
+}
+
+
+
+@keyframes ligneBouge {
+    0% {
+        transform: translateY(100%)rotateY(0deg)perspective(500px);
+
+    }
+
+    100% {
+        transform: translateY(-100%)rotateY(360deg);
+        border-bottom: 4px solid #001dbf;
+       /*  background-color: rgba(18, 9, 234, 0.26);
+        color: white; */
+    }
+}

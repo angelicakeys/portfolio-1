@@ -1,0 +1,152 @@
+/*le header prendra tous l'espace du viewport*/
+
+.introduction {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* header sur toute la page scroll en bas devient petit */
+@keyframes refermeEntete {
+    0% {
+        height: 100vh;
+        /* depuis le debut*/
+        transform: scale(5);
+    }
+
+
+    50% {
+        transform: scale(3)translate(70%, 20%)perspective(500px);
+    }
+
+    100% {
+
+        height: 10vh;
+        /*  depuis le debut*/
+        transform: scale(1)translate(0)perspective(50px);
+    }
+}
+
+
+/*première titre */
+
+.introduction div:nth-of-type(1) {
+    animation: anim1 1s both;
+}
+
+/*troisième titre */
+
+.introduction div:nth-of-type(3) {
+    animation: anim3 4s 2s both;
+}
+
+/*deuxième titre */
+.introduction div:nth-of-type(2) {
+    animation: anim2 5s 5s both;
+}
+
+
+
+
+/* position dans la page intro et disparaît dans le header*/
+@keyframes anim1 {
+
+    0% {
+        transform: :translateY(150vh);
+        padding-top: 50px;
+    }
+
+    100% {
+        transform: translateY(0);
+        padding-top: 50px;
+    }
+}
+
+/* position dans la page intro et disparaît dans le header*/
+@keyframes anim3 {
+
+    0% {
+        padding-bottom: 200px;
+
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+/* position dans la page intro et disparaît dans le header*/
+@keyframes anim2 {
+    0% {
+        padding-bottom: 50px;
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+}
+
+
+
+/*animation de l'avion*/
+
+.avion {
+
+    animation: avionAnim 1s alternate;
+}
+
+@keyframes avionAnim {
+    0% {
+        opacity: 0, transform: translateX(-50%);
+    }
+
+    50% {
+        transform: scale(2)translateY(-15%)rotate(55deg)rotate(90deg)translate(-150%, 200%);
+    }
+}
+
+
+/*Animation du titre */
+h1 {
+    color: #fff;
+    animation: flip 0.6s alternate;
+}
+
+
+.titre {
+    font-size: 20px;
+}
+
+
+/*effet d'une ligne diagonale bleu sur la typographie */
+@keyframes flip {
+    0% {
+        transform: rotateX(0);
+}
+
+100% {
+        transform: rotateX(180deg);
+        background: repeating-linear-gradient(-45deg, #1660b5, #1660b5 20px, #fff 20px, #fff 100px);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+
+    }
+}

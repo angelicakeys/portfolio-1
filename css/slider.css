@@ -1,0 +1,49 @@
+#formulaire {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height : 60vh;
+}
+/* La largeur total du slider en view port */
+#slider{
+ 
+     /* width : à compléter */
+    width: 400vw;
+    display: flex;
+    transition : transform 1s;
+    justify-content: center;
+}
+/* chaque formulaire occupe toute la largeur du view port */
+#slider section{
+
+    flex: 1 0 100vw;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+/* les boutons label qui contrôle le slider */
+.bouton-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-slider label {
+  display : flex;
+  justify-content: center;  
+  align-items : center;
+  width : 2em; 
+  height:2em;
+  border-radius: 50%;  
+  margin : 10px;
+  background-color: aqua;
+}
+
+/*  change la couleur des boutons*/
+.couleurBoutonSelectionne { 
+    background-color: rgb(84, 108, 128) !important;
+    color : #fff;
+}
+

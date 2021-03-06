@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4166d618e7.js" crossorigin="anonymous"></script>
+
+    <title>TP2</title>
+</head>
+
+<body>
+    <header class='introduction'>
+        <!-- <div></div>  JAVASCRIPT-->
+        <div class='titre'>
+            <h1> AÉRO <i class=" avion fas fa-plane"></i> VOYAGE</h1>
+        </div>
+
+        <div></div><!-- Airlines texte effet dans javascript-->
+
+        <div> Bienvenue!</div>
+
+
+    </header>
+    <article id="formulaire">
+        <!-- début #formulaire -->
+        <!-- le #slider est contenu sur 400vw -->
+        <div id='slider'>
+            <section>
+                <!--  formulaire 1  ------------------------------------------->
+                <form>
+                    <label>
+                        <h6>Utilisateur</h6>
+                        <input type="text" id='Utilisateur'>
+                        <span></span>
+                    </label>
+                    <label>
+                        <h6>Mot de passe</h6>
+                        <input type="text" id='Mot-Passe'>
+                        <span></span>
+                    </label>
+                </form>
+                <button class='suivant'>Suivant</button>
+            </section> <!--  formulaire 1  ----------------------------------->
+
+
+            <section>
+                <!--  formulaire 2  ------------------------------------>
+
+                <form>
+                    <label>
+                        <h6>Adresse Courriel</h6>
+                        <input type="text" id='Adresse Courriel'>
+                        <span class="ligne"></span>
+                    </label>
+
+                    <label>
+                        <h6>Code Postal</h6>
+                        <input type="text" id='Code Postal'>
+                        <span class="ligne"></span>
+                    </label>
+
+                    <label>
+                        <h6> Aeroport</h6>
+                        <input type="text" id='Aeroport'>
+                        <span class="ligne"></span>
+
+                    </label>
+                </form>
+                <button class='suivant'>Suivant</button>
+
+            </section> <!-- formulaire 2 ------------------------------------->
+
+            <section>
+                <!-- formulaire 3 -------------------------------------------->
+
+                <form>
+                    <label>
+                        <h6>Date du voyage</h6>
+                        <input type="text" id='Date du voyage'>
+                        <span class="ligne"></span>
+                    </label>
+                    <label>
+                        <h6>Date du Retour</h6>
+                        <input type="text" id='Date du Retour'>
+                        <span class="ligne"></span>
+                    </label>
+
+                    <label>
+                        <h6>Nombre de passagers</h6>
+                        <input type="text" id='Nombre de passagers'>
+                        <span class="ligne"></span>
+                    </label>
+                </form>
+                <button class='suivant'>Suivant</button>
+
+            </section> <!-- formulaire 3 ------------------------------------>
+
+
+            <section>
+                <!--Assemblage de l'information des formulaires -->
+
+                <h3>Profil</h3>
+                <div class="grille"> </div>
+
+            </section>
+            <!--Assemblage de l'information des formulaires sur un tableau-->
+
+
+        </div> <!-- fin div id='slider' -->
+        <!-- Les boutons label qui contrôlent le slider  
+        c'est uniquement le slider qui glisse les boutons restent fixes -->
+        <div class='bouton-slider'>
+            <label>1</label>
+            <label>2</label>
+            <label>3</label>
+            <label>4</label>
+        </div>
+    </article> <!-- Fin #formulaire -->
+    <footer>
+
+        <ul>
+            <li>2w2 Animation et Interactivité Web</li>
+            <li>Techniques d'intégration multimédia</li>
+            <li>Collège de Maisonneuve</li>
+
+        </ul>
+
+    </footer>
+</body>
+
+<script src="js/application.js"></script>
+
+</html>

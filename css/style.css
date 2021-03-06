@@ -1,0 +1,121 @@
+html {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: .85rem;
+}
+
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    
+    background: url(../images/mountain3.jpg)no-repeat;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: 50%; /* centre l'image dans la page*/
+    
+    
+}
+
+header,
+footer {
+    padding: 10px;
+    background-color: #67b1ce; 
+}
+
+header {
+    height: 10vh;
+    background-color: rgba(103, 177, 206, 0.66);
+}
+
+#formulaire {
+    min-height: 70vh;
+
+}
+
+footer {
+    min-height: 13vh;
+     background-color: rgba(5, 27, 36, 0.43);
+}
+
+footer {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+   text-align: center;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    color: #f4f6f8;
+    font-size: .85em;
+    font-weight: 999;
+}
+
+.introduction{
+    color: white;
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 20px;
+    font-family: 'Oswald 500',sans-serif;
+}
+/* correspond au titre du profil du tableau */
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+
+h1{
+    font-size: 40px;
+}
+
+/* couleur de l'icon d'avion*/
+.i{
+    color: white;
+    font-size: 1em;
+}
+
+.titre{
+    padding-top: 50px;
+}
+
+/*********************** MEDIA QUERIES  ************************/
+@media screen and (min-width : 700px) {
+  
+    form{
+        width: 40vw;
+        height: 40vh;
+    }
+    
+    .titre{
+        font-size:10px;
+    }
+}
+
+@media screen and (min-width : 1100px) {
+    
+    form{
+        width: 40vw;
+        height: 40vh;
+    }
+    
+    .titre{
+        font-size:40px;
+    }
+}
